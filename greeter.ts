@@ -23,7 +23,8 @@ let pname:string="bob";
 pname='zhangliquan';
 let age:number=24;
 let sentence:string=`Hello, my name is ${ pname }.
-
 I'll be ${ age + 1 } years old next month.`
+let list:number[]=[1,2,3];
+let list1:Array<number>=[1,2,3];
 //document.body.innerHTML = greeter(user);
 document.body.innerHTML = sentence;
