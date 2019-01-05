@@ -1,3 +1,4 @@
+var _a, _b;
 var Student = /** @class */ (function () {
     function Student(firstName, middleInitial, lastName) {
         this.firstName = firstName;
@@ -65,5 +66,29 @@ function warnuser() {
 var somevalue = "this is a string";
 var strlength = somevalue.length;
 var _strlength = somevalue.length;
+//解构数组 相当于使用了索引
+var input = [1, 2];
+var first = input[0], second = input[1];
+console.log(first); // outputs 1
+console.log(second); // outputs 2
+first = input[0];
+second = input[1];
+_a = [second, first], first = _a[0], second = _a[1];
+var _c = [1, 2, 3, 4], one = _c[0], rest = _c.slice(1);
+console.log(one); //outputs 1;
+console.log(rest); //outputs [2,3,4]
+//解构对象
+var o = {
+    a: "foo",
+    b: 12,
+    c: "bar"
+};
+var a = o.a, b = o.b;
+(_b = { a: "baz", b: 101 }, a = _b.a, b = _b.b);
+function f(_a) {
+    var _b = _a === void 0 ? {} : _a, _c = _b.a, a = _c === void 0 ? "" : _c, _d = _b.b, b = _d === void 0 ? 0 : _d;
+    // ...
+}
+f();
 //document.body.innerHTML = greeter(user);
 document.body.innerHTML = sentence;
